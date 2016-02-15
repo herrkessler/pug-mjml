@@ -1,6 +1,6 @@
 # gulp jade mjml
 
-### use mjml with jade (if you're too lazy to wrire any html... just as I am :-)
+### use mjml with jade (if you're too lazy to write any html / mjml... just as I am :-)
 
 ## Getting Started
 
