@@ -20,9 +20,7 @@
     "gulp": "^3.9.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "tiny-lr": "^0.2.1"
-  },
-  "dependencies": {
+    "tiny-lr": "^0.2.1",
     "gulp-data": "^1.2.1",
     "gulp-mjml": "^2.2.0"
   }
