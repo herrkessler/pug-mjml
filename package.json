@@ -23,6 +23,7 @@
     "tiny-lr": "^0.2.1"
   },
   "dependencies": {
+    "gulp-data": "^1.2.1",
     "gulp-mjml": "^2.2.0"
   }
 }

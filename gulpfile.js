@@ -3,10 +3,14 @@ var gulp        = require('gulp');
     mjml        = require('gulp-mjml'),
     rename      = require("gulp-rename"),
     browserSync = require('browser-sync').create(),
-    reload      = browserSync.reload;
+    reload      = browserSync.reload,
+    data        = require('gulp-data');
 
 gulp.task('pug-2-mjml', function () {
   gulp.src('views/index.pug')
+    .pipe(data(function(file) {
+      return require('./data/data.json');
+    }))
     .pipe(pug())
     .pipe(rename("index.mjml"))
     .pipe(mjml())
