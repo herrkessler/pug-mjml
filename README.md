@@ -1,13 +1,13 @@
 # gulp jade mjml
 
-### use mjml with jade (if you're too lazy to write any html / mjml... just as I am :-)
+### use mjml with pug (if you're too lazy to write any html / mjml... just as I am :-)
 
 ## Getting Started
 
-To use the code [download it](https://github.com/herrkessler/jade-mjmlarchive/master.zip), or clone it:
+To use the code [download it](https://github.com/herrkessler/pug-mjmlarchive/master.zip), or clone it:
 
 ```bash
-git clone https://github.com/herrkessler/jade-mjml
+git clone https://github.com/herrkessler/pug-mjml
 ```
 
 install dependencies:
