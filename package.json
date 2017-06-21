@@ -17,12 +17,12 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.11.1",
-    "browserify": "^13.0.0",
-    "express": "^4.13.4",
     "gulp": "^3.9.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-mjml": "^1.0.0",
+    "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "tiny-lr": "^0.2.1"
+  },
+  "dependencies": {
+    "gulp-mjml": "^2.2.0"
   }
 }

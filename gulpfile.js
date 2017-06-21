@@ -1,16 +1,13 @@
 var gulp        = require('gulp');
-    jade        = require('gulp-jade'),
+    pug        = require('gulp-pug'),
     mjml        = require('gulp-mjml'),
     rename      = require("gulp-rename"),
-    tinylr      = require('tiny-lr'),
-    express     = require('express'),
     browserSync = require('browser-sync').create(),
-    reload      = browserSync.reload,
-    server      = tinylr();
+    reload      = browserSync.reload;
 
-gulp.task('jade-2-mjml', function () {
-  gulp.src('views/index.jade')
-    .pipe(jade())
+gulp.task('pug-2-mjml', function () {
+  gulp.src('views/index.pug')
+    .pipe(pug())
     .pipe(rename("index.mjml"))
     .pipe(mjml())
     .pipe(gulp.dest('./html'))
@@ -26,14 +23,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function() {
-  server.listen(35728, function(err) {
-    if (err) {
-      return console.log(err);
-    }
-
-    gulp.watch('views/*.jade', ['jade-2-mjml']);
-
-  });
+  gulp.watch('views/*.pug', ['pug-2-mjml']);
 });
 
-gulp.task('default', ['watch', 'jade-2-mjml', 'browser-sync']);
+gulp.task('default', ['watch', 'pug-2-mjml', 'browser-sync']);
